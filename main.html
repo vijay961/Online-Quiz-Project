@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simple Quiz App</title>
+    <link rel="icon" href="images/favicon.png" type="image/png">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato|Montserrat" rel="stylesheet">
+	<link rel="icon" href="images/favicon.png" type="image/png">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+	<script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+	  <nav class="navbar navbar-inverse navbar-fixed-top noBorder" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+                <a href="index.html"><img src="https://novalauncherapk.online/wp-content/uploads/logos/logo-9100642.png" class="img-responsive"></a>
+            </div>
+            
+            <div class="collapse navbar-collapse noPadding" id="myNavbar">
+                <div class="navbar-right menustyle">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html" class="glyphicon glyphicon-home"> Home</a></li>
+                        <li><a href="register.html" class="glyphicon glyphicon-log-in"> Register</a></li>
+                         <li><a href="rules.html" class="glyphicon glyphicon-alert"> Rules</a></li>
+                         <li><a href="contact.html" class="glyphicon glyphicon-send"> Contact</a></li>
+                         <li><a href="https://www.google.com/" class="glyphicon glyphicon-search"> Search</a></li>
+                    </ul>
+                </div>
+            </div>
+       </div>
+    </nav>
+	<div class="container well">
+		<header>
+			<br>
+			<h2 class="page-header headtxt"><b>Simple Quiz For You...!</b></h2>
+			<p>
+				Test your knowledge in <strong>Computer Fundamentals</strong>
+				<hr>
+			</p>
+		</header>
+		<section class="board">
+			<form name="quizForm" onsubmit="return submitAnswers()">
+				<div class="optiontxt
+				">
+				<h3>1. The brain of any computer system is...?</h3>
+				<input type="radio" name="q1" value="a" id="q1a">(A) ALU<br>
+				<input type="radio" name="q1" value="b" id="q1b">(B) CU<br>
+				<input type="radio" name="q1" value="c" id="q1c">(C) CPU<br>
+				<input type="radio" name="q1" value="d" id="q1d">(D) Memory<br>
+
+				<h3>2. What difference does the 5th generation computer have from other generation computers?</h3>
+				<input type="radio" name="q2" value="a" id="q2a">(A) Technological Advancement<br>
+				<input type="radio" name="q2" value="b" id="q2b">(B) Scientific Code<br>
+				<input type="radio" name="q2" value="c" id="q2c">(C) Object Oriented Programming<br>
+				<input type="radio" name="q2" value="d" id="q2d">(D) All of the above<br>
+
+				<h3>3. Javascript is directly related to java programming langugage?</h3>
+				<input type="radio" name="q3" value="a" id="q3a">a. True<br>
+				<input type="radio" name="q3" value="b" id="q3b">b. False<br>
+
+				<h3>4. Which of the following computer language is used for Artificial Intelligence?</h3>
+				<input type="radio" name="q4" value="a" id="q4a">(A) FORTRAN<br>
+				<input type="radio" name="q4" value="b" id="q4b">(B) PROLOG<br>
+				<input type="radio" name="q4" value="c" id="q4c">(C) C<br>
+				<input type="radio" name="q4" value="d" id="q4d">(D) COBOL<br>
+
+				<h3>5. Which of the following is the 1's complement of 10?</h3>
+				<input type="radio" name="q5" value="a" id="q5a">(A) 01<br>
+				<input type="radio" name="q5" value="b" id="q5b">(B) 110<br>
+				<input type="radio" name="q5" value="c" id="q5c">(C) 11<br>
+				<input type="radio" name="q5" value="d" id="q5d">(D) 10<br>
+				
+
+				<h3>6. The binary system uses powers of...</h3>
+				<input type="radio" name="q6" value="a" id="q6a">(A) 2<br>
+				<input type="radio" name="q6" value="b" id="q6b">(B) 4<br>
+				<input type="radio" name="q6" value="c" id="q6c">(C) 8<br>
+				<input type="radio" name="q6" value="d" id="q6d">(D) 16<br>
+
+
+				<h3>7. A Computer Program that converts assembly language to machine language is...</h3>
+				<input type="radio" name="q7" value="a" id="q7a">(A) Compiler<br>
+				<input type="radio" name="q7" value="b" id="q7b">(B) Interpreter<br>
+				<input type="radio" name="q7" value="c" id="q7c">(C) Assembler<br>
+				<input type="radio" name="q7" value="d" id="q7d">(D) Comparator<br>
+
+
+				<h3>8. Which access method is used for obtaining a record from a cassette tape?</h3>
+				<input type="radio" name="q8" value="a" id="q8a">(A) Direct<br>
+				<input type="radio" name="q8" value="b" id="q8b">(B) Sequential<br>
+				<input type="radio" name="q8" value="c" id="q8c">(C) Random<br>
+				<input type="radio" name="q8" value="d" id="q8d">(D) None of the above<br>
+
+
+				<h3>9. The section of the CPU that selects, interprets and sees to the execution of program instructions...</h3>
+				<input type="radio" name="q9" value="a" id="q9a">(A) Memory<br>
+				<input type="radio" name="q9" value="b" id="q9b">(B) Register Unit<br>
+				<input type="radio" name="q9" value="c" id="q9c">(C) Control Unit<br>
+				<input type="radio" name="q9" value="d" id="q9d">(D) ALU<br>
+
+
+				<h3>10. Which type of system puts the user into direct conversation with the computer through a keyboard?</h3>
+				<input type="radio" name="q10" value="a" id="q10a">(A) Real-Time Processing<br>
+				<input type="radio" name="q10" value="b" id="q10b">(B) Interactive Computer<br>
+				<input type="radio" name="q10" value="c" id="q10c">(C) Batch Processing<br>
+				<input type="radio" name="q10" value="d" id="q10d">(D) Time Sharing<br>
+
+
+				<h3>11. A common boundary between two systems is called...</h3>
+				<input type="radio" name="q11" value="a" id="q11a">(A) Interdiction<br>
+				<input type="radio" name="q11" value="b" id="q11b">(B) Interface<br>
+				<input type="radio" name="q11" value="c" id="q11c">(C) Surface<br>
+				<input type="radio" name="q11" value="d" id="q11d">(D) None of the above<br>
+
+
+				<h3>12. Which computer has been designed to be as compact as possible?</h3>
+				<input type="radio" name="q12" value="a" id="q12a">(A) Mini<br>
+				<input type="radio" name="q12" value="b" id="q12b">(B) Super computer<br>
+				<input type="radio" name="q12" value="c" id="q12c">(C) Micro computer<br>
+				<input type="radio" name="q12" value="d" id="q12d">(D) Mainframe<br>
+
+
+				<h3>13. Which method is used to connect a remote computer?</h3>
+				<input type="radio" name="q13" value="a" id="q13a">(A) Device<br>
+				<input type="radio" name="q13" value="b" id="q13b">(B) Dialup<br>
+				<input type="radio" name="q13" value="c" id="q13c">(C) Diagnostic<br>
+				<input type="radio" name="q13" value="d" id="q13d">(D) Logic circuit<br>
+
+
+				<h3>14. The symbols used in an assembly language are...</h3>
+				<input type="radio" name="q14" value="a" id="q14a">(A) Codes<br>
+				<input type="radio" name="q14" value="b" id="q14b">(B) Mnemonics<br>
+				<input type="radio" name="q14" value="c" id="q14c">(C) Assembler<br>
+				<input type="radio" name="q14" value="d" id="q14d">(D) All of the above<br>
+
+
+				<h3>15. ASCII stands for...</h3>
+				<input type="radio" name="q15" value="a" id="q15a">(A) American standard code for information interchange<br>
+				<input type="radio" name="q15" value="b" id="q15b">(B) All purpose scientific code for information interchange<br>
+				<input type="radio" name="q15" value="c" id="q15c">(C) American security code for information interchange<br>
+				<input type="radio" name="q15" value="d" id="q15d">(D) American Scientific code for information interchange<br>
+
+				</div>
+				<br><br>
+				<center>
+				<input type="submit" class="btn btn-success" value="Submit Answers"/>
+				</center>
+			</form>
+			<div id="results">
+				
+			</div>
+			<hr>
+		</section>
+		<footer>
+			<p class="copytxt">Copyright &copy; 2018-19 Designed &amp; Developed By B.Vijay</p>
+		</footer>
+	</div>
+	    <!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+</body>
+</html>

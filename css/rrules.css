@@ -1,0 +1,51 @@
+.rulestext{
+	font-family: 'PT Serif', serif;
+	font-size: 22px;
+}
+.headertxt{
+	color: #2196f3;
+}
+.bg{
+	color: blue;
+}
+.footertxt{
+	color: red;
+	font-size: 19px;
+}
+
+
+#myNavbar{
+	overflow-x: hidden;
+
+}
+
+.navbar.scrolled{
+	box-shadow: 0 3px 3px rgba(0,0,0,0.1);
+	padding: 15px 0px;
+}
+
+#myNavbar{
+	overflow-x: hidden;
+
+}
+
+.navbar-nav a {
+    color: #fff !important;
+	font-size:14px;
+}
+
+#myNavbar ul li:last-child a{
+	padding-right: 10px;
+}
+
+.navbar{
+	padding: 5px;
+	transition:padding 0.4s;
+}
+
+
+.menustyle{
+	text-transform: uppercase;
+	font-size: 12px;
+	padding: 15px;
+}

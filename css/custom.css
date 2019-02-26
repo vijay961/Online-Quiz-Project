@@ -1,0 +1,432 @@
+/*-------------------------
+	General Styles
+--------------------------*/
+
+body{
+	font-family : Bookman Old Style, sans-serif;
+	width: 100%;
+	padding-top: 150px;
+}
+
+a{
+	color :#8d736c !important;
+}
+
+
+/*-----------------------------------
+	Navigation Bar Styles
+------------------------------------*/
+
+.navbar{
+	padding: 10px 35px;
+	transition:padding 0.4s;
+}
+/*.navbar-inverse{
+	background-color: ;
+}
+*/
+
+/* Contract the navbar while scrolling */
+
+.navbar.scrolled{
+	box-shadow: 0 3px 3px rgba(0,0,0,0.1);
+	padding: 16px 0;
+}
+
+#myNavbar{
+	overflow-x: hidden;
+
+}
+
+.navbar-nav a {
+    color: #fff !important;
+	font-size:14px;
+}
+
+#myNavbar ul li:last-child a{
+	padding-right: 0;
+}
+
+/* Brand name */
+
+.brandStyle{
+	color: blue; !important;
+	font-family : Bookman Old Style, sans-serif;
+	font-size: 24px;
+
+}
+
+/* Menu */
+
+.menustyle{
+	text-transform: uppercase;
+	font-size: 12px;
+	padding: 10px;
+}
+
+/*-----------------------------------
+	Main Picture 
+------------------------------------*/
+
+.headpicture{
+	background-size:cover;
+	background-repeat:no-repeat;
+	width: 100%;
+	height: 480px;
+	margin-top: -60px;
+}
+
+.cofpic{
+	padding: 15px;
+}
+
+.cheadpicture{
+		background:url(images/3.jpg);
+	background-size:cover;
+	background-repeat:no-repeat;
+	width: 50000px;
+	height: 600px;
+}
+
+/*-----------------------------------
+		Text
+------------------------------------*/
+
+/* Titles */
+
+h1{
+	color: #2196f3;
+	font-size:24px;
+	/*margin-top: 10px 0px;*/
+	font-family : Bookman Old Style, sans-serif;
+}
+
+/* Paragraphs */
+
+.textStyle{
+	color:#385573;
+	font-size: 18px;
+	text-align: justify;
+	line-height: 1.5;
+
+}
+
+.textStyle a{
+	text-decoration:underline;
+}
+
+.textStyle a:hover{
+	text-decoration: none;
+}
+
+.pcontent{
+	text-align: left;
+	font-size: 17px;
+}
+/*-----------------------------------
+	Latest Projects
+------------------------------------*/
+
+/* Container */
+
+.latestProjects{
+	max-width: 900px;
+	margin : 40px auto 0 auto;
+}
+
+.latestProjects p{
+	font-size: 16px;
+	color: #2196f3;
+	width: 260px;
+	text-align: left;
+	margin: 13px auto 60px auto;
+}
+
+.latestProjects p a{
+	font-size: 12px;
+	display: block;
+	width: 80px;
+	white-space: nowrap;
+	margin-top: 6px;
+}
+
+.latestProjects img{
+	width:260px;
+}
+
+
+/*-----------------------------------
+		Footer
+------------------------------------*/
+
+.footer{
+	padding: 50px 0px 0px 0px;
+	border-top: 1px solid #e5e5e5;
+	color: black;
+	font-size: 12px;
+	margin:10px auto;
+	margin-bottom: 10px;
+	
+}
+
+/* Social buttons */
+
+.socialButtons img{
+	width:36px;
+	opacity:0.6;
+}
+
+.socialButtons a{
+	display:inline-block;
+}
+
+.socialButtons a:hover{
+	opacity:0.8;
+}
+
+#footerLogoText{
+	line-height:30px;
+	font-size:16px;
+	color: red;
+	font-family: 'Oswald', sans-serif;
+}
+
+
+
+/*-----------------------------------
+	Helper classes
+------------------------------------*/
+
+.noPadding{
+	padding:0;
+}
+
+
+.noBorder{
+	border: 0;
+}
+
+
+/*---------------------------------------
+Jumbotron H1
+-------------------------------------*/
+
+.jumbotron h1, .jumbotron .h1 {
+    color:#2196f3;
+	font-size:28px;
+}
+
+.slogan{
+	color:#ff0080 !important;
+}
+.text-white{
+	color:white;
+}
+
+.btn-primary {
+    color: #ffffff !important;
+}
+
+.img-portfolio {
+    margin-bottom: 30px;
+}
+
+
+h4, .h4 {
+    font-size: 18px;
+}
+
+/*-----------------------------------
+	Media querries
+------------------------------------*/
+
+/* On smaller screens */
+
+@media (max-width: 992px) {
+	
+	/* General */
+	
+.ptitle{
+	font-size:8px;
+	
+}
+	
+	body{
+		padding-top: 76px;
+	}
+
+	li{
+		padding-left:8px;
+	}
+	
+	h1 {
+		margin-top: 20px;
+		font-size:18px;
+	}
+
+	/* Navigation bar */
+	
+	.navbar{
+		padding: 16px 0;
+	}
+	
+	/* Main picture */
+	
+	.headpicture{
+		height: 250px;
+	}
+	
+	/* Latest Projects */
+	
+	.textStyle{
+		margin-top: 40px;
+		font-size:12px;
+	}
+	
+	.sub-title{
+		font-size:12px !important;
+	}
+	.points li{
+	font-size: 12px !important;
+}
+
+.table{
+	font-size:12px!important;
+}
+	.titleStyle{
+		margin-top: 30px;
+	}
+	
+	/* Footer */
+	
+	.footer{
+		margin: 40px auto;
+	}
+	
+	#footerLogoText{
+		text-align: center;
+		font-size:12px;
+	}
+	
+	/* Sharing buttons */
+	
+	.responsiveAlign {
+		text-align: center;
+		padding: 5px ;
+	}
+.jumbo_para{
+	font-size:15px !important;
+}
+
+.login_link {
+	font-size:12px !important;
+}
+
+
+}
+
+/* On bigger screens */ 
+
+@media (min-width: 993px) {
+	
+	/* Sharing buttons */
+	
+	.responsiveAlign {
+		float: right;
+	}
+}
+
+@media(max-width:767px) {
+    .img-portfolio {
+        margin-bottom: 15px;
+    }
+}
+.centered-form {
+    margin-top: 50px;
+    margin-bottom: 41px;
+}
+
+.centered-form .panel {
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: rgba(0, 0, 0, 0.3) 20px 20px 20px;
+}
+#your_enquiry{
+	height:70px;
+	resize:none;
+}
+
+#forum_block{
+	background:url(../images/group.png);
+	background-repeat:repeat-x;
+	background-position:center center;
+	min-height:308px;
+}
+.login_link {
+	color:#2196f3 !important;
+	font-size:14px;
+}
+.login_link:hover{
+	color:#909090 !important;
+	text-decoration:underline;
+}
+
+.form-control{
+	color:#2196f3 !important;
+}
+#kalam{
+	float:right;
+	margin:10px 0px 10px 10px;
+}
+
+.alert-danger {
+    background-color:#ff8080 !important;
+	color:red;
+}
+
+.points{
+	text-align:left;
+}
+
+.points li{
+		color:#385573;
+	font-size: 18px;
+}
+.table{
+	font-size:14px;
+}
+.sub-title{
+	font-size:20px;
+	text-align:left;
+	font-weight:bold;
+}
+.art-title{
+font-size:20px;
+color:#2196f3;	
+}
+.tab_center,td{
+	text-align:center;
+}
+
+cse form.gsc-search-box, form.gsc-search-box {
+    background: #fff !important;
+    border: 1px solid #fff!important;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    width: 100%;
+    margin: 0 0 2% 0;
+    -webkit-box-shadow: 0 1px 2px #fff !important;
+    -moz-box-shadow: 0 1px 2px #fff !important;
+    box-shadow: 0 1px 2px #fff !important;
+    display: block;
+}
+
+.cse .gsc-control-cse, .gsc-control-cse {
+    font-family: Verdana, sans-serif;
+    background-color: #fff !important;
+    border: 1px solid #fff !important;
+}
+
+.div.gsc-clear-button{
+	display:none !important;
+}
